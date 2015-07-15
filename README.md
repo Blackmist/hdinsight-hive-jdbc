@@ -42,6 +42,10 @@ Once the connection is established, it's just sending queries and waiting on Hiv
     - Replace __clusteradmin__ with the admin account name for your cluster
     - Replace __clusterpassword__ with the password for the admin account
 
+    Special note: If you are using PowerShell, you have to wrap the `-D` parameters in quotes. So it would be as follows:
+
+        mvn compile exec:java "-Dexec.args=""clustername clusteradmin clusterpassword"""
+
 This will return the following:
 
     Getting a description of the table:
